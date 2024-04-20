@@ -1,11 +1,8 @@
-
 import random
 
-def Flip_Coin(no_coin_fliped):
+def flip_coin(no_coin_fliped):
     if no_coin_fliped <=0:
-        print("Enter valid no of times coin flipped")
-        
-
+        print("Enter valid no of times coin flipped")  
     
     head_count=0
     tail_count=0
@@ -22,10 +19,9 @@ def Flip_Coin(no_coin_fliped):
     
 
 if __name__=="__main__":
-    # Flip_Coin(110)
     try:
         num_flips = int(input("Enter the number of times to flip the coin: "))
-        Flip_Coin(num_flips)
+        flip_coin(num_flips)
     except ValueError:
         print("Please enter a valid positive integer.")
 
